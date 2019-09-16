@@ -1,0 +1,35 @@
+boatd:
+    port: 2222
+    interface: 127.0.0.1
+
+plugin_directory: null
+
+plugins:
+    - logger:
+        enabled: false
+        period: 10
+        filename: logs/log_trace
+
+    - mavlink:
+        enabled: false
+        device: /dev/ttyUSB0
+        baud: 115200
+
+    - gpx_logger:
+        enabled: true
+        period: 1
+        filename: logs/gpx_log
+
+driver:
+    file: /Users/Tom/Developer/Programming/Git/abersailbot/sails-boatd-driver/driver.py
+
+behaviours:
+    - example:
+        file: /Users/Tom/Developer/Programming/Git/abersailbot/dewi/boatd/dewi-behaviour/waypoint-behaviour
+
+wind_filtering:
+    enabled: true
+    rate_of_change: 75
+
+waypoint_file: waypoints
+home_position: [52.417318, -4.087246]

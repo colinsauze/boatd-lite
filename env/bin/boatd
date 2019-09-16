@@ -1,0 +1,6 @@
+#!/Users/Tom/Documents/Developer/Programming/Git/abersailbot/dewi/boatd/env/bin/python2.7
+# EASY-INSTALL-DEV-SCRIPT: 'boatd==3.2.0','boatd'
+__requires__ = 'boatd==3.2.0'
+__import__('pkg_resources').require('boatd==3.2.0')
+__file__ = '/Users/Tom/Documents/Developer/Programming/Git/abersailbot/dewi/boatd/bin/boatd'
+exec(compile(open(__file__).read(), __file__, 'exec'))
